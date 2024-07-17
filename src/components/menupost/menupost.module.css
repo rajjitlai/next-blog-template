@@ -1,0 +1,70 @@
+.items {
+    margin-top: 35px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.imageContainer {
+    flex: 1;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.image {
+    border-radius: 50%;
+    background: var(--af-bg);
+    object-fit: cover;
+}
+
+.textContainer {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.category {
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-style: 12px;
+    color: var(--white);
+    width: max-content;
+}
+
+.category.chemistry {
+    background: #40e0d09f;
+}
+
+.category.physics {
+    background: #701070a8;
+}
+
+.category.programming {
+    background: #7096ffa7;
+}
+
+.category.english {
+    background: #ff5f5fa7;
+}
+
+.postTitle {
+    font-style: 18px;
+    font-weight: 500;
+    color: var(--soft-text);
+}
+
+.detail {
+    font-size: 12px;
+}
+
+.date {
+    color: grey;
+}

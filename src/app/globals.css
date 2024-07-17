@@ -1,0 +1,122 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --bg-color: white;
+    --text-color: black;
+    --soft-bg: #f0f0f0;
+    --soft-text: #626262;
+    --main-color: #38ff42;
+    --af-bg: #f0f0f0;
+}
+
+.dark {
+    --bg-color: #131417;
+    --text-color: #ddd;
+    --soft-bg: #252830;
+    --soft-text: #a6a6a6;
+}
+
+.light {
+    --bg-color: white;
+    --text-color: black;
+    --soft-bg: #f0f0f0;
+    --soft-text: #626262;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+::selection {
+    background: var(--main-color);
+    color: var(--black);
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #252830;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--soft-text);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--main-color);
+}
+
+.container {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    position: relative;
+}
+
+.wrapper {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    position: relative;
+}
+
+@media screen and (max-width:1536px) {
+    .wrapper {
+        max-width: 1366px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .wrapper {
+        max-width: 1024px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .wrapper {
+        max-width: 768px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .wrapper {
+        max-width: 640px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .wrapper {
+        max-width: 475px;
+    }
+}
+
+.ql-container{
+    font-size: 28px !important;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before{
+    color: #b3b3b1;
+}

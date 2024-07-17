@@ -1,0 +1,43 @@
+.categoryList {
+    margin-top: 35px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.categoryItem {
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.categoryItem.chemistry {
+    background: #40e0d09f;
+}
+
+.categoryItem.physics {
+    background: #701070a8;
+}
+
+.categoryItem.programming {
+    background: #7096ffa7;
+}
+
+.categoryItem.english {
+    background: #ff5f5fa7;
+}
+
+.postTitle {
+    font-style: 18px;
+    font-weight: 500;
+    color: var(--soft-text);
+}
+
+.detail {
+    font-size: 12px;
+}
+
+.date {
+    color: grey;
+}
